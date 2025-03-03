@@ -1,3 +1,4 @@
+
 import Layout from '../../components/Layout';
 import Sidebar from '../../components/Dashboard/Sidebar';
 import AppointmentCalendar from '../../components/Dashboard/AppointmentCalendar';
@@ -49,7 +50,6 @@ export default function Appointments() {
           <div className="w-full md:w-1/4">
             <Sidebar siteData={siteData} />
           </div>
-
           <div className="w-full md:w-3/4">
             <div className="flex justify-between items-center mb-8">
               <h1 className="text-2xl font-bold">Appointments</h1>
