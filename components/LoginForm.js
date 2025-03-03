@@ -31,7 +31,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="auth-form bg-white">
+    <div className="auth-form bg-white p-8 rounded-lg shadow-md max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-6 text-center">Client Login</h2>
       
       {error && (
@@ -41,30 +41,30 @@ export default function LoginForm() {
       )}
       
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="mb-4">
           <label htmlFor="username" className="block mb-2">Username</label>
           <input
             type="text"
             id="username"
-            className="form-control"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         
-        <div className="form-group">
+        <div className="mb-6">
           <label htmlFor="password" className="block mb-2">Password</label>
           <input
             type="password"
             id="password"
-            className="form-control"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         
         <div className="mt-8">
-          <button type="submit" className="btn btn-primary w-full">
+          <button type="submit" className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-opacity-90">
             Log In
           </button>
         </div>

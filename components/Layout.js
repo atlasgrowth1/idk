@@ -40,13 +40,13 @@ export default function Layout({ children, title = 'Electrician Services' }) {
               <h3 className="text-xl font-bold mb-4">Contact Us</h3>
               <p>Phone: (555) 123-4567</p>
               <p>Email: info@yourelectrician.com</p>
-              <p>Address: 123 Main St, Your City</p>
+              <p>Address: 123 Main St, Anytown, USA</p>
             </div>
             
             <div>
               <h3 className="text-xl font-bold mb-4">Hours</h3>
-              <p>Monday - Friday: 8am - 5pm</p>
-              <p>Saturday: 9am - 2pm</p>
+              <p>Monday - Friday: 8am - 6pm</p>
+              <p>Saturday: 9am - 4pm</p>
               <p>Sunday: Closed</p>
             </div>
           </div>
