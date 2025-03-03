@@ -1,0 +1,123 @@
+index.js:627 Uncaught ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: 
+  × the name `getSiteData` is defined multiple times
+     ╭─[/home/runner/workspace/lib/siteData.js:35:1]
+  35 │   }
+  36 │ };
+  37 │ 
+  38 │ export function getSiteData(siteName) {
+     ·                 ─────┬─────
+     ·                      ╰── previous definition of `getSiteData` here
+  39 │   if (!siteName) return null;
+  40 │   
+  41 │   // Convert to lowercase and remove any special characters for comparison
+  42 │   const normalizedSiteName = siteName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  43 │   
+  44 │   if (electricianData[normalizedSiteName]) {
+  45 │     return electricianData[normalizedSiteName];
+  46 │   }
+  47 │   
+  48 │   // Return default data if site not found
+  49 │   return {
+  50 │     "name": "Local Electrician",
+  51 │     "site": normalizedSiteName,
+  52 │     "phone": "+1 555-555-5555",
+  53 │     "email_1": "contact@localelectrician.com",
+  54 │     "street": "123 Main St",
+  55 │     "city": "Your City",
+  56 │     "state": "Your State",
+  57 │     "postal_code": "12345",
+  58 │     "rating": 5.0,
+  59 │     "reviews": 50,
+  60 │     "reviews_link": "https://google.com",
+  61 │     "working_hours": {"Monday": "9AM-5PM", "Tuesday": "9AM-5PM", "Wednesday": "9AM-5PM", "Thursday": "9AM-5PM", "Friday": "9AM-5PM", "Saturday": "Closed", "Sunday": "Closed"},
+  62 │     "logo": "https://lh3.googleusercontent.com/placeholder/default-logo"
+  63 │   };
+  64 │ }
+  65 │ 
+  66 │ export function getAllSites() {
+  67 │   return Object.values(electricianData);
+  68 │ }
+  69 │ // Sample site data for demonstration
+  70 │ const sites = {
+  71 │   "default": {
+  72 │     name: "Your Electrician",
+  73 │     phone: "+1 555-123-4567",
+  74 │     email_1: "contact@yourelectrician.com",
+  75 │     city: "Your City",
+  76 │     state: "State",
+  77 │     rating: 5.0,
+  78 │     reviews: 50
+  79 │   },
+  80 │   "chicago": {
+  81 │     name: "Chicago Electrical Pros",
+  82 │     phone: "+1 312-555-7890",
+  83 │     email_1: "chicago@yourelectrician.com",
+  84 │     city: "Chicago",
+  85 │     state: "IL",
+  86 │     rating: 4.9,
+  87 │     reviews: 87
+  88 │   },
+  89 │   "newyork": {
+  90 │     name: "NYC Electrical Services",
+  91 │     phone: "+1 212-555-3456",
+  92 │     email_1: "nyc@yourelectrician.com",
+  93 │     city: "New York",
+  94 │     state: "NY",
+  95 │     rating: 4.8,
+  96 │     reviews: 124
+  97 │   }
+  98 │ };
+  99 │ 
+ 100 │ export function getSiteData(site) {
+     ·                 ─────┬─────
+     ·                      ╰── `getSiteData` redefined here
+ 101 │   return sites[site] || sites.default;
+ 102 │ }
+     ╰────
+
+    at processResult (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:400590)
+    at <unknown> (/home/runner/workspace/node_modules/next/dist/compiled/webpack/bundle5.js:28:402302)
+    at <unknown> (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8645)
+    at <unknown> (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:5019)
+    at r.callback (/home/runner/workspace/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4039)Understand this errorAI
+websocket.js:39 [HMR] connected
+hydration-error-info.js:63 ./lib/siteData.js
+Error: 
+  × the name `getSiteData` is defined multiple times
+     ╭─[/home/runner/workspace/lib/siteData.js:35:1]
+  35 │   }
+  36 │ };
+  37 │ 
+  38 │ export function getSiteData(siteName) {
+     ·                 ─────┬─────
+     ·                      ╰── previous definition of `getSiteData` here
+  39 │   if (!siteName) return null;
+  40 │   
+  41 │   // Convert to lowercase and remove any special characters for comparison
+  42 │   const normalizedSiteName = siteName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  43 │   
+  44 │   if (electricianData[normalizedSiteName]) {
+  45 │     return electricianData[normalizedSiteName];
+  46 │   }
+  47 │   
+  48 │   // Return default data if site not found
+  49 │   return {
+  50 │     "name": "Local Electrician",
+  51 │     "site": normalizedSiteName,
+  52 │     "phone": "+1 555-555-5555",
+  53 │     "email_1": "contact@localelectrician.com",
+  54 │     "street": "123 Main St",
+  55 │     "city": "Your City",
+  56 │     "state": "Your State",
+  57 │     "postal_code": "12345",
+  58 │     "rating": 5.0,
+  59 │     "reviews": 50,
+  60 │     "reviews_link": "https://google.com",
+  61 │     "working_hours": {"Monday": "9AM-5PM", "Tuesday": "9AM-5PM", "Wednesday": "9AM-5PM", "Thursday": "9AM-5PM", "Friday": "9AM-5PM", "Saturday": "Closed", "Sunday": "Closed"},
+  62 │     "logo": "https://lh3.googleusercontent.com/placeholder/default-logo"
+  63 │   };
+  64 │ }
+  65 │ 
+  66 │ export function getAllSites() {
+  67 │   return Object.values(electricianDa

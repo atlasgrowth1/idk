@@ -1,0 +1,96 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/index",{
+
+/***/ "./lib/siteData.js":
+/*!*************************!*\
+  !*** ./lib/siteData.js ***!
+  \*************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+
+
+;
+    // Wrapped in an IIFE to avoid polluting the global scope
+    ;
+    (function () {
+        var _a, _b;
+        // Legacy CSS implementations will `eval` browser code in a Node.js context
+        // to extract CSS. For backwards compatibility, we need to check we're in a
+        // browser context before continuing.
+        if (typeof self !== 'undefined' &&
+            // AMP / No-JS mode does not inject these helpers:
+            '$RefreshHelpers$' in self) {
+            // @ts-ignore __webpack_module__ is global
+            var currentExports = module.exports;
+            // @ts-ignore __webpack_module__ is global
+            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;
+            // This cannot happen in MainTemplate because the exports mismatch between
+            // templating and execution.
+            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);
+            // A module can be accepted automatically based on its exports, e.g. when
+            // it is a Refresh Boundary.
+            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {
+                // Save the previous exports signature on update so we can compare the boundary
+                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)
+                module.hot.dispose(function (data) {
+                    data.prevSignature =
+                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);
+                });
+                // Unconditionally accept an update to this module, we'll check if it's
+                // still a Refresh Boundary later.
+                // @ts-ignore importMeta is replaced in the loader
+                module.hot.accept();
+                // This field is set when the previous version of this module was a
+                // Refresh Boundary, letting us know we need to check for invalidation or
+                // enqueue an update.
+                if (prevSignature !== null) {
+                    // A boundary can become ineligible if its exports are incompatible
+                    // with the previous exports.
+                    //
+                    // For example, if you add/remove/change exports, we'll want to
+                    // re-execute the importing modules, and force those components to
+                    // re-render. Similarly, if you convert a class component to a
+                    // function, we want to invalidate the boundary.
+                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {
+                        module.hot.invalidate();
+                    }
+                    else {
+                        self.$RefreshHelpers$.scheduleUpdate();
+                    }
+                }
+            }
+            else {
+                // Since we just executed the code for the module, it's possible that the
+                // new exports made it ineligible for being a boundary.
+                // We only care about the case when we were _previously_ a boundary,
+                // because we already accepted this update (accidental side effect).
+                var isNoLongerABoundary = prevSignature !== null;
+                if (isNoLongerABoundary) {
+                    module.hot.invalidate();
+                }
+            }
+        }
+    })();
+
+
+/***/ }),
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ Home; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"./node_modules/react/jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ \"./components/Layout.js\");\n/* harmony import */ var _components_HeroSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/HeroSection */ \"./components/HeroSection.js\");\n/* harmony import */ var _components_AboutSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/AboutSection */ \"./components/AboutSection.js\");\n/* harmony import */ var _components_ServicesSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ServicesSection */ \"./components/ServicesSection.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ \"./node_modules/next/router.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _lib_siteData__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/siteData */ \"./lib/siteData.js\");\n/* harmony import */ var _lib_siteData__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_lib_siteData__WEBPACK_IMPORTED_MODULE_7__);\n\nvar _s = $RefreshSig$();\n\n\n\n\n\n\n\nfunction Home() {\n    _s();\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_5__.useRouter)();\n    const { site } = router.query;\n    const [siteData, setSiteData] = (0,react__WEBPACK_IMPORTED_MODULE_6__.useState)(null);\n    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_6__.useState)(true);\n    (0,react__WEBPACK_IMPORTED_MODULE_6__.useEffect)(()=>{\n        if (site) {\n            try {\n                const data = (0,_lib_siteData__WEBPACK_IMPORTED_MODULE_7__.getSiteData)(site);\n                setSiteData(data);\n            } catch (error) {\n                console.error(\"Error loading site data:\", error);\n            }\n        } else {\n            // Set default site data when no site parameter is provided\n            setSiteData({\n                name: \"Your Electrician\",\n                phone: \"+1 555-123-4567\",\n                email_1: \"contact@yourelectrician.com\",\n                city: \"Your City\",\n                state: \"State\",\n                rating: 5.0,\n                reviews: 50\n            });\n        }\n        setLoading(false);\n    }, [\n        site\n    ]);\n    if (loading) {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Layout__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"container py-16 text-center\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: \"Loading...\"\n                }, void 0, false, {\n                    fileName: \"/home/runner/workspace/pages/index.js\",\n                    lineNumber: 42,\n                    columnNumber: 11\n                }, this)\n            }, void 0, false, {\n                fileName: \"/home/runner/workspace/pages/index.js\",\n                lineNumber: 41,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"/home/runner/workspace/pages/index.js\",\n            lineNumber: 40,\n            columnNumber: 7\n        }, this);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Layout__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_HeroSection__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                siteData: siteData,\n                title: siteData ? \"Professional Electrical Services by \".concat(siteData.name) : \"Professional Electrical Services\",\n                subtitle: \"Quality electrical services for your home and business\",\n                ctaText: \"Schedule Service\",\n                ctaLink: \"/dashboard/appointments\"\n            }, void 0, false, {\n                fileName: \"/home/runner/workspace/pages/index.js\",\n                lineNumber: 50,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_AboutSection__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                siteData: siteData\n            }, void 0, false, {\n                fileName: \"/home/runner/workspace/pages/index.js\",\n                lineNumber: 58,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_ServicesSection__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n                siteData: siteData\n            }, void 0, false, {\n                fileName: \"/home/runner/workspace/pages/index.js\",\n                lineNumber: 60,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/home/runner/workspace/pages/index.js\",\n        lineNumber: 49,\n        columnNumber: 5\n    }, this);\n}\n_s(Home, \"BZsW/yR3S9WXSxX4IyLHn5qTIps=\", false, function() {\n    return [\n        next_router__WEBPACK_IMPORTED_MODULE_5__.useRouter\n    ];\n});\n_c = Home;\nvar _c;\n$RefreshReg$(_c, \"Home\");\n\n\n;\n    // Wrapped in an IIFE to avoid polluting the global scope\n    ;\n    (function () {\n        var _a, _b;\n        // Legacy CSS implementations will `eval` browser code in a Node.js context\n        // to extract CSS. For backwards compatibility, we need to check we're in a\n        // browser context before continuing.\n        if (typeof self !== 'undefined' &&\n            // AMP / No-JS mode does not inject these helpers:\n            '$RefreshHelpers$' in self) {\n            // @ts-ignore __webpack_module__ is global\n            var currentExports = module.exports;\n            // @ts-ignore __webpack_module__ is global\n            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;\n            // This cannot happen in MainTemplate because the exports mismatch between\n            // templating and execution.\n            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);\n            // A module can be accepted automatically based on its exports, e.g. when\n            // it is a Refresh Boundary.\n            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {\n                // Save the previous exports signature on update so we can compare the boundary\n                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)\n                module.hot.dispose(function (data) {\n                    data.prevSignature =\n                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);\n                });\n                // Unconditionally accept an update to this module, we'll check if it's\n                // still a Refresh Boundary later.\n                // @ts-ignore importMeta is replaced in the loader\n                module.hot.accept();\n                // This field is set when the previous version of this module was a\n                // Refresh Boundary, letting us know we need to check for invalidation or\n                // enqueue an update.\n                if (prevSignature !== null) {\n                    // A boundary can become ineligible if its exports are incompatible\n                    // with the previous exports.\n                    //\n                    // For example, if you add/remove/change exports, we'll want to\n                    // re-execute the importing modules, and force those components to\n                    // re-render. Similarly, if you convert a class component to a\n                    // function, we want to invalidate the boundary.\n                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {\n                        module.hot.invalidate();\n                    }\n                    else {\n                        self.$RefreshHelpers$.scheduleUpdate();\n                    }\n                }\n            }\n            else {\n                // Since we just executed the code for the module, it's possible that the\n                // new exports made it ineligible for being a boundary.\n                // We only care about the case when we were _previously_ a boundary,\n                // because we already accepted this update (accidental side effect).\n                var isNoLongerABoundary = prevSignature !== null;\n                if (isNoLongerABoundary) {\n                    module.hot.invalidate();\n                }\n            }\n        }\n    })();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBMEM7QUFDVTtBQUNFO0FBQ007QUFDcEI7QUFDSTtBQUNFO0FBRS9CLFNBQVNROztJQUN0QixNQUFNQyxTQUFTTCxzREFBU0E7SUFDeEIsTUFBTSxFQUFFTSxJQUFJLEVBQUUsR0FBR0QsT0FBT0UsS0FBSztJQUM3QixNQUFNLENBQUNDLFVBQVVDLFlBQVksR0FBR1AsK0NBQVFBLENBQUM7SUFDekMsTUFBTSxDQUFDUSxTQUFTQyxXQUFXLEdBQUdULCtDQUFRQSxDQUFDO0lBRXZDRCxnREFBU0EsQ0FBQztRQUNSLElBQUlLLE1BQU07WUFDUixJQUFJO2dCQUNGLE1BQU1NLE9BQU9ULDBEQUFXQSxDQUFDRztnQkFDekJHLFlBQVlHO1lBQ2QsRUFBRSxPQUFPQyxPQUFPO2dCQUNkQyxRQUFRRCxLQUFLLENBQUMsNEJBQTRCQTtZQUM1QztRQUNGLE9BQU87WUFDTCwyREFBMkQ7WUFDM0RKLFlBQVk7Z0JBQ1ZNLE1BQU07Z0JBQ05DLE9BQU87Z0JBQ1BDLFNBQVM7Z0JBQ1RDLE1BQU07Z0JBQ05DLE9BQU87Z0JBQ1BDLFFBQVE7Z0JBQ1JDLFNBQVM7WUFDWDtRQUNGO1FBQ0FWLFdBQVc7SUFDYixHQUFHO1FBQUNMO0tBQUs7SUFFVCxJQUFJSSxTQUFTO1FBQ1gscUJBQ0UsOERBQUNkLDBEQUFNQTtzQkFDTCw0RUFBQzBCO2dCQUFJQyxXQUFVOzBCQUNiLDRFQUFDQzs4QkFBRTs7Ozs7Ozs7Ozs7Ozs7OztJQUlYO0lBRUEscUJBQ0UsOERBQUM1QiwwREFBTUE7OzBCQUNMLDhEQUFDQywrREFBV0E7Z0JBQ1ZXLFVBQVVBO2dCQUNWaUIsT0FBT2pCLFdBQVcsdUNBQXFELE9BQWRBLFNBQVNPLElBQUksSUFBSztnQkFDM0VXLFVBQVM7Z0JBQ1RDLFNBQVE7Z0JBQ1JDLFNBQVE7Ozs7OzswQkFHViw4REFBQzlCLGdFQUFZQTtnQkFBQ1UsVUFBVUE7Ozs7OzswQkFFeEIsOERBQUNULG1FQUFlQTtnQkFBQ1MsVUFBVUE7Ozs7Ozs7Ozs7OztBQUdqQztHQXREd0JKOztRQUNQSixrREFBU0E7OztLQURGSSIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvLi9wYWdlcy9pbmRleC5qcz9iZWU3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9MYXlvdXQnO1xuaW1wb3J0IEhlcm9TZWN0aW9uIGZyb20gJy4uL2NvbXBvbmVudHMvSGVyb1NlY3Rpb24nO1xuaW1wb3J0IEFib3V0U2VjdGlvbiBmcm9tICcuLi9jb21wb25lbnRzL0Fib3V0U2VjdGlvbic7XG5pbXBvcnQgU2VydmljZXNTZWN0aW9uIGZyb20gJy4uL2NvbXBvbmVudHMvU2VydmljZXNTZWN0aW9uJztcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcbmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBnZXRTaXRlRGF0YSB9IGZyb20gJy4uL2xpYi9zaXRlRGF0YSc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoKSB7XG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xuICBjb25zdCB7IHNpdGUgfSA9IHJvdXRlci5xdWVyeTtcbiAgY29uc3QgW3NpdGVEYXRhLCBzZXRTaXRlRGF0YV0gPSB1c2VTdGF0ZShudWxsKTtcbiAgY29uc3QgW2xvYWRpbmcsIHNldExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7XG4gIFxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGlmIChzaXRlKSB7XG4gICAgICB0cnkge1xuICAgICAgICBjb25zdCBkYXRhID0gZ2V0U2l0ZURhdGEoc2l0ZSk7XG4gICAgICAgIHNldFNpdGVEYXRhKGRhdGEpO1xuICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcIkVycm9yIGxvYWRpbmcgc2l0ZSBkYXRhOlwiLCBlcnJvcik7XG4gICAgICB9XG4gICAgfSBlbHNlIHtcbiAgICAgIC8vIFNldCBkZWZhdWx0IHNpdGUgZGF0YSB3aGVuIG5vIHNpdGUgcGFyYW1ldGVyIGlzIHByb3ZpZGVkXG4gICAgICBzZXRTaXRlRGF0YSh7XG4gICAgICAgIG5hbWU6IFwiWW91ciBFbGVjdHJpY2lhblwiLFxuICAgICAgICBwaG9uZTogXCIrMSA1NTUtMTIzLTQ1NjdcIixcbiAgICAgICAgZW1haWxfMTogXCJjb250YWN0QHlvdXJlbGVjdHJpY2lhbi5jb21cIixcbiAgICAgICAgY2l0eTogXCJZb3VyIENpdHlcIixcbiAgICAgICAgc3RhdGU6IFwiU3RhdGVcIixcbiAgICAgICAgcmF0aW5nOiA1LjAsXG4gICAgICAgIHJldmlld3M6IDUwXG4gICAgICB9KTtcbiAgICB9XG4gICAgc2V0TG9hZGluZyhmYWxzZSk7XG4gIH0sIFtzaXRlXSk7XG4gIFxuICBpZiAobG9hZGluZykge1xuICAgIHJldHVybiAoXG4gICAgICA8TGF5b3V0PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBweS0xNiB0ZXh0LWNlbnRlclwiPlxuICAgICAgICAgIDxwPkxvYWRpbmcuLi48L3A+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9MYXlvdXQ+XG4gICAgKTtcbiAgfVxuICBcbiAgcmV0dXJuIChcbiAgICA8TGF5b3V0PlxuICAgICAgPEhlcm9TZWN0aW9uIFxuICAgICAgICBzaXRlRGF0YT17c2l0ZURhdGF9IFxuICAgICAgICB0aXRsZT17c2l0ZURhdGEgPyBgUHJvZmVzc2lvbmFsIEVsZWN0cmljYWwgU2VydmljZXMgYnkgJHtzaXRlRGF0YS5uYW1lfWAgOiAnUHJvZmVzc2lvbmFsIEVsZWN0cmljYWwgU2VydmljZXMnfVxuICAgICAgICBzdWJ0aXRsZT1cIlF1YWxpdHkgZWxlY3RyaWNhbCBzZXJ2aWNlcyBmb3IgeW91ciBob21lIGFuZCBidXNpbmVzc1wiXG4gICAgICAgIGN0YVRleHQ9XCJTY2hlZHVsZSBTZXJ2aWNlXCJcbiAgICAgICAgY3RhTGluaz1cIi9kYXNoYm9hcmQvYXBwb2ludG1lbnRzXCJcbiAgICAgIC8+XG4gICAgICBcbiAgICAgIDxBYm91dFNlY3Rpb24gc2l0ZURhdGE9e3NpdGVEYXRhfSAvPlxuICAgICAgXG4gICAgICA8U2VydmljZXNTZWN0aW9uIHNpdGVEYXRhPXtzaXRlRGF0YX0gLz5cbiAgICA8L0xheW91dD5cbiAgKTtcbn0iXSwibmFtZXMiOlsiTGF5b3V0IiwiSGVyb1NlY3Rpb24iLCJBYm91dFNlY3Rpb24iLCJTZXJ2aWNlc1NlY3Rpb24iLCJ1c2VSb3V0ZXIiLCJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsImdldFNpdGVEYXRhIiwiSG9tZSIsInJvdXRlciIsInNpdGUiLCJxdWVyeSIsInNpdGVEYXRhIiwic2V0U2l0ZURhdGEiLCJsb2FkaW5nIiwic2V0TG9hZGluZyIsImRhdGEiLCJlcnJvciIsImNvbnNvbGUiLCJuYW1lIiwicGhvbmUiLCJlbWFpbF8xIiwiY2l0eSIsInN0YXRlIiwicmF0aW5nIiwicmV2aWV3cyIsImRpdiIsImNsYXNzTmFtZSIsInAiLCJ0aXRsZSIsInN1YnRpdGxlIiwiY3RhVGV4dCIsImN0YUxpbmsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n"));
+
+/***/ })
+
+});
