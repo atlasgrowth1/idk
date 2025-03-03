@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const PipelineView = () => {
   // Sample data for the pipeline - normally this would come from an API
@@ -64,6 +65,10 @@ const PipelineView = () => {
     </div>
   );
 
+  // Get site parameter from URL to preserve it
+  const { query } = useRouter();
+  const siteParam = query.site ? `?site=${query.site}` : '';
+  
   return (
     <div className="pipeline-view">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
