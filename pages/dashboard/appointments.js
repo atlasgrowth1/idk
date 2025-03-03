@@ -7,6 +7,15 @@ import { useEffect, useState } from 'react';
 import { getSiteData } from '../../lib/siteData';
 import { useAuth } from '../../lib/auth';
 
+import Layout from '../../components/Layout';
+import Sidebar from '../../components/Dashboard/Sidebar';
+import AppointmentCalendar from '../../components/Dashboard/AppointmentCalendar';
+import AppointmentsList from '../../components/Dashboard/AppointmentsList';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { getSiteData } from '../../lib/siteData';
+import { useAuth } from '../../lib/auth';
+
 export default function AppointmentsPage() {
   const router = useRouter();
   const { user, loading } = useAuth();
@@ -24,8 +33,12 @@ export default function AppointmentsPage() {
     
     // Get site data
     if (site) {
-      const data = getSiteData(site);
-      setSiteData(data);
+      try {
+        const data = getSiteData(site);
+        setSiteData(data);
+      } catch (error) {
+        console.error("Error loading site data:", error);
+      }
     }
   }, [loading, user, router, site]);
   
