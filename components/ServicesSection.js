@@ -1,71 +1,61 @@
+
 import React from 'react';
-import Link from 'next/link';
 
 export default function ServicesSection({ siteData }) {
   const services = [
     {
-      id: 1,
       title: "Electrical Repairs",
       description: "We repair electrical issues safely and efficiently, from simple fixes to complex repairs.",
-      icon: "🔧",
-      link: "/services/repairs"
+      icon: "🔧"
     },
     {
-      id: 2,
       title: "Lighting Installation",
       description: "Enhance your space with professional lighting installation services for any area of your property.",
-      icon: "💡",
-      link: "/services/lighting"
+      icon: "💡"
     },
     {
-      id: 3,
       title: "Panel Upgrades",
       description: "Upgrade your electrical panel to improve safety and accommodate modern electrical demands.",
-      icon: "⚡",
-      link: "/services/panels"
+      icon: "⚡"
     },
     {
-      id: 4,
-      title: "Home Rewiring",
-      description: "Complete rewiring services to ensure your home's electrical system is safe and up to code.",
-      icon: "🏠",
-      link: "/services/rewiring"
+      title: "Wiring & Rewiring",
+      description: "Complete wiring and rewiring services for new construction or renovation projects.",
+      icon: "🔌"
     },
     {
-      id: 5,
+      title: "Ceiling Fan Installation",
+      description: "Professional ceiling fan installation to improve comfort and energy efficiency.",
+      icon: "🌀"
+    },
+    {
       title: "Emergency Services",
-      description: "24/7 emergency electrical services for when you need help right away.",
-      icon: "🚨",
-      link: "/services/emergency"
-    },
-    {
-      id: 6,
-      title: "Inspections",
-      description: "Thorough electrical inspections to identify potential issues before they become problems.",
-      icon: "🔍",
-      link: "/services/inspections"
+      description: "24/7 emergency electrical services to address urgent issues when they arise.",
+      icon: "🚨"
     }
   ];
 
   return (
     <section className="section">
       <div className="container">
-        <div className="section-title">
-          <h2 className="text-3xl font-bold">Our Services</h2>
-          <p>Comprehensive electrical solutions for all your needs</p>
-        </div>
-
+        <h2 className="section-title text-3xl font-bold">Our Services</h2>
+        <p className="text-center mb-12 max-w-3xl mx-auto">
+          We offer a wide range of electrical services for residential and commercial properties.
+          {siteData && ` Serving ${siteData.city}, ${siteData.state} and surrounding areas.`}
+        </p>
+        
         <div className="services-grid">
-          {services.map(service => (
-            <div key={service.id} className="service-card">
-              <div className="text-4xl mb-4">{service.icon}</div>
+          {services.map((service, index) => (
+            <div key={index} className="service-card bg-white">
+              <div className="text-3xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-              <p className="mb-4">{service.description}</p>
-              <Link href={service.link} className="text-primary font-bold hover:underline">
-                Learn More
-              </Link>
+              <p>{service.description}</p>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <a href="/services" className="btn btn-primary">View All Services</a>
         </div>
       </div>
     </section>

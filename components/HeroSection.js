@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export default function HeroSection({ siteData, title, subtitle, ctaText, ctaLink }) {
@@ -13,7 +14,7 @@ export default function HeroSection({ siteData, title, subtitle, ctaText, ctaLin
               Serving {siteData.city}, {siteData.state} | {siteData.rating} ★ ({siteData.reviews} reviews)
             </p>
           )}
-          <a href={ctaLink} className="btn btn-primary">{ctaText}</a>
+          <a href={ctaLink} className="btn btn-secondary">{ctaText}</a>
         </div>
       </div>
     </section>
