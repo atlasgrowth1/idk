@@ -1,0 +1,179 @@
+./components/AboutSection.js
+Error: 
+  × the name `AboutSection` is defined multiple times
+    ╭─[/home/runner/workspace/components/AboutSection.js:1:1]
+  1 │ 
+  2 │ export default function AboutSection({ siteData }) {
+    ·                         ──────┬─────
+    ·                               ╰── previous definition of `AboutSection` here
+  3 │   return (
+  4 │     <section className="section bg-gray-100">
+  5 │       <div className="container">
+  6 │         <h2 className="section-title text-3xl font-bold">About Us</h2>
+  7 │         
+  8 │         <div className="about-content">
+  9 │           <div>
+ 10 │             <img 
+ 11 │               src="/images/electrician.jpg" 
+ 12 │               alt="Professional Electrician" 
+ 13 │               className="rounded-lg shadow-md w-full h-auto"
+ 14 │               onError={(e) => {
+ 15 │                 e.target.onerror = null;
+ 16 │                 e.target.src = "https://placehold.co/600x400?text=Professional+Electrician";
+ 17 │               }}
+ 18 │             />
+ 19 │           </div>
+ 20 │           
+ 21 │           <div>
+ 22 │             <h3 className="text-2xl font-bold mb-4">
+ 23 │               {siteData ? siteData.name : "Your Electrician"}
+ 24 │             </h3>
+ 25 │             
+ 26 │             <p className="mb-4">
+ 27 │               We provide professional electrical services for residential and commercial properties. 
+ 28 │               With over 15 years of experience, we ensure safe and reliable electrical installations and repairs.
+ 29 │             </p>
+ 30 │             
+ 31 │             <p className="mb-6">
+ 32 │               Our team of licensed electricians is committed to delivering exceptional service 
+ 33 │               and peace of mind for all your electrical needs.
+ 34 │             </p>
+ 35 │             
+ 36 │             {siteData && (
+ 37 │               <div className="mb-6">
+ 38 │                 <p className="font-bold">Contact Information:</p>
+ 39 │                 <p>Phone: {siteData.phone}</p>
+ 40 │                 <p>Email: {siteData.email_1}</p>
+ 41 │               </div>
+ 42 │             )}
+ 43 │             
+ 44 │             <a href="/dashboard/appointments" className="btn btn-outline">Schedule a Consultation</a>
+ 45 │           </div>
+ 46 │         </div>
+ 47 │       </div>
+ 48 │     </section>
+ 49 │   );
+ 50 │ }
+ 51 │ import React from 'react';
+ 52 │ import Image from 'next/image';
+ 53 │ 
+ 54 │ export default function AboutSection({ siteData }) {
+    ·                         ──────┬─────
+    ·                               ╰── `AboutSection` redefined here
+ 55 │   return (
+ 56 │     <section className="section bg-gray-100">
+ 57 │       <div className="container">
+    ╰────
+
+  × the name `default` is exported multiple times
+     ╭─[/home/runner/workspace/components/AboutSection.js:1:1]
+   1 │     
+   2 │ ╭─▶ export default function AboutSection({ siteData }) {
+   3 │ │     return (
+   4 │ │       <section className="section bg-gray-100">
+   5 │ │         <div className="container">
+   6 │ │           <h2 className="section-title text-3xl font-bold">About Us</h2>
+   7 │ │           
+   8 │ │           <div className="about-content">
+   9 │ │             <div>
+  10 │ │               <img 
+  11 │ │                 src="/images/electrician.jpg" 
+  12 │ │                 alt="Professional Electrician" 
+  13 │ │                 className="rounded-lg shadow-md w-full h-auto"
+  14 │ │                 onError={(e) => {
+  15 │ │                   e.target.onerror = null;
+  16 │ │                   e.target.src = "https://placehold.co/600x400?text=Professional+Electrician";
+  17 │ │                 }}
+  18 │ │               />
+  19 │ │             </div>
+  20 │ │             
+  21 │ │             <div>
+  22 │ │               <h3 className="text-2xl font-bold mb-4">
+  23 │ │                 {siteData ? siteData.name : "Your Electrician"}
+  24 │ │               </h3>
+  25 │ │               
+  26 │ │               <p className="mb-4">
+  27 │ │                 We provide professional electrical services for residential and commercial properties. 
+  28 │ │                 With over 15 years of experience, we ensure safe and reliable electrical installations and repairs.
+  29 │ │               </p>
+  30 │ │               
+  31 │ │               <p className="mb-6">
+  32 │ │                 Our team of licensed electricians is committed to delivering exceptional service 
+  33 │ │                 and peace of mind for all your electrical needs.
+  34 │ │               </p>
+  35 │ │               
+  36 │ │               {siteData && (
+  37 │ │                 <div className="mb-6">
+  38 │ │                   <p className="font-bold">Contact Information:</p>
+  39 │ │                   <p>Phone: {siteData.phone}</p>
+  40 │ │                   <p>Email: {siteData.email_1}</p>
+  41 │ │                 </div>
+  42 │ │               )}
+  43 │ │               
+  44 │ │               <a href="/dashboard/appointments" className="btn btn-outline">Schedule a Consultation</a>
+  45 │ │             </div>
+  46 │ │           </div>
+  47 │ │         </div>
+  48 │ │       </section>
+  49 │ │     );
+  50 │ ├─▶ }
+     · ╰──── previous exported here
+  51 │     import React from 'react';
+  52 │     import Image from 'next/image';
+  53 │     
+  54 │ ╭─▶ export default function AboutSection({ siteData }) {
+  55 │ │     return (
+  56 │ │       <section className="section bg-gray-100">
+  57 │ │         <div className="container">
+  58 │ │           <div className="section-title">
+  59 │ │             <h2 className="text-3xl font-bold">About Us</h2>
+  60 │ │             <p>Trusted electrical services since 2005</p>
+  61 │ │           </div>
+  62 │ │           
+  63 │ │           <div className="about-content">
+  64 │ │             <div>
+  65 │ │               <h3 className="text-2xl font-bold mb-4">Why Choose {siteData ? siteData.name : 'Us'}?</h3>
+  66 │ │               
+  67 │ │               <div className="space-y-4">
+  68 │ │                 <p>
+  69 │ │                   With over 15 years of experience in the electrical industry, we've built a reputation for excellence in {siteData ? siteData.city : 'the area'} and beyond. Our team of licensed electricians are committed to providing safe, reliable, and efficient electrical services.
+  70 │ │                 </p>
+  71 │ │                 
+  72 │ │                 <ul className="space-y-2">
+  73 │ │                   <li className="flex items-start">
+  74 │ │                     <span className="text-primary mr-2">✓</span>
+  75 │ │                     <span>Licensed and insured professionals</span>
+  76 │ │                   </li>
+  77 │ │                   <li className="flex items-start">
+  78 │ │                     <span className="text-primary mr-2">✓</span>
+  79 │ │                     <span>24/7 emergency services</span>
+  80 │ │                   </li>
+  81 │ │                   <li className="flex items-start">
+  82 │ │                     <span className="text-primary mr-2">✓</span>
+  83 │ │                     <span>Upfront, transparent pricing</span>
+  84 │ │                   </li>
+  85 │ │                   <li className="flex items-start">
+  86 │ │                     <span className="text-primary mr-2">✓</span>
+  87 │ │                     <span>Satisfaction guaranteed</span>
+  88 │ │                   </li>
+  89 │ │                 </ul>
+  90 │ │               </div>
+  91 │ │             </div>
+  92 │ │             
+  93 │ │             <div className="relative h-[400px] rounded-lg overflow-hidden">
+  94 │ │               <img 
+  95 │ │                 src="/images/electrician.jpg" 
+  96 │ │                 alt="Professional Electrician"
+  97 │ │                 className="object-cover w-full h-full"
+  98 │ │               />
+  99 │ │             </div>
+ 100 │ │           </div>
+ 101 │ │         </div>
+ 102 │ │       </section>
+ 103 │ │     );
+ 104 │ ├─▶ }
+     · ╰──── exported more than once
+     ╰────
+
+Error: 
+  ☞ Exported identifiers must be unique
